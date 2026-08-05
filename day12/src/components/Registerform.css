@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.container h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:13px;
+    margin-top:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#4f46e5;
+    box-shadow:0 0 8px rgba(79,70,229,.3);
+}
+
+h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.gender{
+    display:flex;
+    justify-content:space-between;
+}
+
+.gender label{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.gender input{
+    width:auto;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#4f46e5;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3730a3;
+    transform:translateY(-2px);
+}
+
+.error{
+    color:red;
+    margin-top:15px;
+    font-weight:600;
+}
+
+.student-card{
+    margin-top:30px;
+    background:#f8f9ff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    border-left:6px solid #4f46e5;
+}
+
+.student-card h2{
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+.student-card p{
+    margin:10px 0;
+    color:#333;
+    font-size:15px;
+}
+
+.student-card strong{
+    color:#111;
+}
+/* ========================= */
+/* Tablet Devices */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        width:100%;
+        max-width:500px;
+        padding:25px;
+    }
+
+    .container h1{
+        font-size:28px;
+    }
+
+    input,
+    select,
+    button{
+        font-size:15px;
+    }
+
+}
+
+
+/* ========================= */
+/* Mobile Devices */
+/* ========================= */
+
+@media (max-width: 480px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        width:100%;
+        padding:20px;
+        border-radius:12px;
+    }
+
+    .container h1{
+        font-size:24px;
+    }
+
+    h3{
+        font-size:16px;
+    }
+
+    input,
+    select{
+        padding:12px;
+        font-size:14px;
+    }
+
+    button{
+        padding:12px;
+        font-size:16px;
+    }
+
+    .gender{
+        flex-direction:column;
+        gap:12px;
+        align-items:flex-start;
+    }
+
+    .student-card{
+        padding:15px;
+    }
+
+    .student-card h2{
+        font-size:22px;
+    }
+
+    .student-card p{
+        font-size:14px;
+    }
+
+}
+
+
+/* ========================= */
+/* Extra Small Devices */
+/* ========================= */
+
+@media (max-width: 320px){
+
+    .container{
+        padding:15px;
+    }
+
+    .container h1{
+        font-size:20px;
+    }
+
+    input,
+    select,
+    button{
+        font-size:13px;
+        padding:10px;
+    }
+
+    h3{
+        font-size:15px;
+    }
+
+    .student-card h2{
+        font-size:18px;
+    }
+
+}
