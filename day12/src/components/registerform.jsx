@@ -66,6 +66,7 @@ function Registerform() {
         <h3>Select Course</h3>
 
         <select
+        
           value={course}
           onChange={(e) => setCourse(e.target.value)}
         >
